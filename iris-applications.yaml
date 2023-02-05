@@ -1,0 +1,15 @@
+apiVersion: intersystems.com/v1
+kind: IrisApplicationList
+applications:
+  - name: myApp1
+    ipm:
+      - package: isc.codetidy:1.1.1
+        irisNamespace: USER
+      - package: csvgen:1.4.1
+        irisNamespace: USER
+  - name: myApp2
+    ipm:
+      - package: demo-coffeemaker:1.0.2
+        irisNamespace: USER
+      - package: zpipe:1.1.0
+        irisNamespace: USER
